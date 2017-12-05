@@ -1,0 +1,330 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.snip1135 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.snip1135 * {
+    box-sizing: border-box;
+}
+
+.snip1135 li {
+    display: inline-block;
+    list-style: outside none none;
+    margin: 0 1.5em;
+    padding: 0;
+}
+
+.snip1135 a {
+    padding: 0.5em 0;
+    color: black;
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.snip1135 a:before,
+.snip1135 a:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.snip1135 a:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #000000;
+}
+
+.snip1135 a:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    content: attr(data-hover);
+    color: black;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+
+.snip1135 a:hover:before,
+.snip1135 .current a:before {
+    opacity: 1;
+    width: 100%;
+}
+
+.snip1135 a:hover:after,
+.snip1135 .current a:after {
+    max-width: 100%;
+}
+
+/* Demo purposes only */
+
+body {
+
+    padding: 50px 0;
+    background-color: cornsilk;
+}
+
+.snip1135 {
+    padding: 0;
+}
+
+.aarhus {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 78%
+}
+
+.artikler {
+    margin: 0 350px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.resume {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.billederartikler {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width:100%
+}
+
+.tekst {
+    font-size: 1.1em;
+}
+
+
+
+
+
+.snip1534 {
+    font-family: 'Muli', sans-serif;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px 5px;
+    min-width: 230px;
+    max-width: 315px;
+    width: 100%;
+    color: #ffffff;
+    text-align: left;
+    font-size: 16px;
+    background-color: #000000;
+}
+
+.snip1534 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+.snip1534 img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.75;
+}
+
+.snip1534 figcaption {
+    z-index: 1;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(195, 86, 97, 0.85);
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    padding: 20px;
+}
+
+.snip1534 figcaption:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(-50%, 50%) rotate(45deg);
+    transform: translate(-50%, 50%) rotate(45deg);
+    position: absolute;
+}
+
+.snip1534 h3,
+.snip1534 h5 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.snip1534 h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.snip1534 h5 {
+    font-weight: normal;
+}
+
+.snip1534 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.snip1534:hover > img,
+.snip1534.hover > img {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+
+/* Demo purposes only */
+
+body {
+    text-align: center;
+}
+
+
+
+
+
+
+.footer-distributed {
+    background-color: rgba(195, 86, 97, 0.85);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    font: bold 16px sans-serif;
+    text-align: center;
+
+    padding: 5px 5px 5px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+/* Footer left */
+
+/* The company logo */
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0 0 10px;
+}
+
+.footer-distributed h3 span {
+    color: #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: white;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer social icons */
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+
+    .footer-distributed {
+        font: bold 14px sans-serif;
+    }
+
+    .footer-distributed .footer-company-name {
+        font-size: 12px;
+    }
+
+    .footer-distributed form input,
+    .footer-distributed form textarea {
+        width: 250px;
+    }
+
+    .footer-distributed form button {
+        padding: 10px 35px;
+    }
+
+        .footer-distributed {
+            padding: 30px;
+        }
+
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-right {
+            float: none;
+            max-width: 300px;
+
+        }
+
+        .footer-distributed .footer-left {
+            margin-bottom: 40px;
+        }
+
+        .footer-distributed form {
+            margin-top: 30px;
+        }
+
+        .footer-distributed form {
+            display: block;
+        }
+
+        .footer-distributed form button {
+            float: none;
+        }
+    }
+
+    .aarhusfooter {
+        width:200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
