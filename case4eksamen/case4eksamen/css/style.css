@@ -1,0 +1,504 @@
+/*Disse ting er ens for både mobil og computer*/
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #e2e4da;
+    margin: 0;
+}
+
+
+header {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+}
+
+
+.logoheader {
+    float: left;
+}
+
+
+.forsidebillede {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+footer img {
+    width: 30px;
+    margin: 0 3% 0 3%;
+}
+
+
+footer {
+    background-color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+}
+
+
+h1 {
+    font-size: 1.4em;
+    margin-top: 10%;
+    font-family: 'arial';
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size: 1.1em;
+    margin-left: 0%;
+    margin-top: 3%;
+    font-family: 'arial';
+    text-transform: uppercase;
+}
+
+
+
+
+/*Burger menu til mobilversion*/
+
+@media screen and (max-width:768px) {
+    /* burgermenu tager fra Eduardo Boucas´s codepen med ændringer (https://codepen.io/eduardoboucas/pen/BNyKwO)*/
+    .burger {
+        float: right;
+        display: block;
+        border: 0;
+        background: none;
+        outline: 0;
+        padding: 0;
+        cursor: pointer;
+        border-bottom: 4px solid currentColor;
+        width: 30px;
+        transition: border-bottom 1s ease-in-out;
+        -webkit-transition: border-bottom 1s ease-in-out;
+    }
+    .burger::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+
+    .burger:before {
+        content: "";
+        display: block;
+        border-bottom: 4px solid currentColor;
+        width: 100%;
+        margin-bottom: 5px;
+        transition: -webkit-transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+
+    .burger:after {
+        content: "";
+        display: block;
+        border-bottom: 4px solid currentColor;
+        width: 100%;
+        margin-bottom: 5px;
+        transition: -webkit-transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+
+
+    .burger-check {
+        display: none;
+    }
+
+
+
+    .burger-check:checked ~ .burger {
+        border-bottom: 4px solid transparent;
+        transition: border-bottom 0.8s ease-in-out;
+        -webkit-transition: border-bottom 0.8s ease-in-out;
+    }
+
+
+    .burger-check:checked ~ .burger:before {
+        transform: rotate(-405deg) translateY(1px) translateX(-3px);
+        -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+        transition: -webkit-transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+
+    .burger-check:checked ~ .burger:after {
+        transform: rotate(405deg) translateY(-4px) translateX(-5px);
+        -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+        transition: -webkit-transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out;
+        transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+        -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    }
+
+    .navigation {
+        overflow: hidden;
+        max-height: 0;
+        -webkit-transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+
+    .burger-check:checked ~ .navigation {
+        max-height: 500px;
+        -webkit-transition: max-height 0.5s ease-in-out;
+        transition: max-height 0.5s ease-in-out;
+    }
+
+
+    a {
+        color: inherit;
+    }
+
+
+
+
+    /*mobilmenu*/
+    .menu {
+        margin: 40px;
+        padding: 0;
+        font-family: 'arial', sans-serif;
+        font-style: normal;
+        font-size: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    .menu li {
+        list-style: none;
+        font-size: 15px;
+        padding: 5px 0;
+    }
+
+    .menu li a {
+        text-decoration: none;
+    }
+
+
+    .menu li a:hover {
+        text-decoration: underline;
+    }
+
+
+
+    /*Her begynder sin egen redigering*/
+    .indhold {
+        margin-top: 80px;
+    }
+
+
+    /*header*/
+    header {
+        padding: 10px 10px 30px 10px;
+    }
+
+
+    /*tekst*/
+    .tekst {
+        line-height: 1.5;
+        font-family: 'arial';
+        margin-left: 3%;
+        margin-right: 10%;
+    }
+
+
+    .kontakt {
+        text-align: center;
+        line-height: 1.5;
+        font-family: 'arial';
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .brodtext {
+        display: none;
+    }
+
+
+    .tekstforside {
+        display: none;
+    }
+
+
+    .cases p {
+        width: 85%;
+    }
+
+
+    .tekst {
+        text-align: center;
+    }
+
+
+    .tekstcase1 {
+        line-height: 2.0em;
+        font-family: 'arial';
+        margin: 10px 0 100px;
+        padding: 20px 0 0 10px;
+    }
+
+
+
+    /*Billeder*/
+    .forsidebillede {
+        width: 90%;
+        margin-top: 20%;
+    }
+
+
+    .logoheader {
+        width: 60px;
+        position: fixed;
+    }
+
+
+    .designcase1 {
+        display: none;
+    }
+
+
+    .designcase2 {
+        display: none;
+    }
+
+
+    .migselv {
+        display: none;
+    }
+
+
+    .mnbillede {
+        width: 120px;
+        margin-left: 35%;
+    }
+
+
+    .designcase1 img {
+        width: 120px;
+        height: 90px;
+        border: 1px solid #000000;
+    }
+
+}
+
+/*computer*/
+
+@media screen and (min-width:769px) {
+
+    .burger-check {
+        display: none;
+    }
+
+
+    .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        margin-right: 30px;
+        margin-bottom: 10px;
+        font-family: 'arial';
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: 80px;
+
+    }
+
+
+    .menu li {
+        float: right;
+        display: inline;
+        margin-left: 10px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        overflow: hidden;
+    }
+
+
+    .menu li a {
+        display: inline-block;
+        text-align: center;
+        padding: 5px 18px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+    .menu li a:hover {
+        color: #e2e4da;
+        background-color: #000000;
+    }
+
+
+    .menu .active {
+        color: #ffffff;
+    }
+
+
+    .menu li.ommigmenu {
+        display: none;
+    }
+
+
+    header {
+        margin-bottom: 40px;
+    }
+
+
+    .indhold {
+        margin-top: 70px;
+    }
+
+
+    .kontakt {
+        text-align: center;
+        line-height: 1.5;
+        font-family: 'arial';
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+
+    .logoheader {
+        width: 130px;
+        position: fixed;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+
+    .brodtext p {
+        font-family: 'arial';
+        line-height: 1.5;
+    }
+
+
+    .brodtext {
+        width: 50%;
+    }
+
+
+    .brodtext h1 {
+        text-align: center;
+    }
+
+
+    .mitnavn {
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+    .tekst {
+        margin: 0 15%;
+    }
+
+
+    .migselv {
+        float: right;
+        width: 200px;
+        margin-top: 40px;
+    }
+
+
+    .forsidebillede {
+        width: 700px;
+        margin-top: 12%;
+    }
+
+
+    .tekstcase1 {
+        line-height: 2.0em;
+        font-family: 'arial';
+        margin: 0 15%;
+        padding: 20px 0 0 0;
+    }
+
+
+    .tekstcase1 p {
+        width: 50%;
+    }
+
+
+    .cases img {
+        float: right;
+        padding-right: 15px;
+    }
+
+
+    .caseimage {
+        width: 150px;
+    }
+
+
+    .designimage1 {
+        width: 190px;
+    }
+
+
+    .designimage2 {
+        width: 190px;
+    }
+
+
+    .pccase2 {
+        width: 350px;
+    }
+
+
+    .case2virk {
+        width: 300px;
+    }
+
+
+    .case2design {
+        width: 200px;
+    }
+
+
+    .case3design {
+        width: 250px;
+    }
+
+
+    .designcase3 {
+        width: 150px;
+    }
+
+
+    .virkcase3 {
+        width: 300px;
+    }
+
+
+    .konklusioncase3 {
+        width: 300px;
+    }
+
+
+    .interaktioncase2 {
+        width: 300px;
+    }
+}
